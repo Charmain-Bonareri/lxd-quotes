@@ -1,9 +1,10 @@
 export class Quote {
   id: number;
-  name: string;
   quotetitle: string;
   quotecontent: string;
   author: string;
+  submittedquote: string;
   creationdate : Date;
   like: number;
+  dislike: number;
 }
