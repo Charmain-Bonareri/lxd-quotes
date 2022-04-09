@@ -5,3 +5,18 @@
   background-image: url("./header.png");
   background-position: center center;
 }
+
+.heading1{
+  font-family: 'Rock Salt', cursive;
+  font-size: larger;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+.p1{
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 5%;
+}
