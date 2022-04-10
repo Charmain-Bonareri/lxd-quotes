@@ -1,0 +1,9 @@
+.btn{
+  background-color: rgb(255, 0, 174);
+
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  font-size: large;
+}
