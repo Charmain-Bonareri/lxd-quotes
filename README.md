@@ -1,4 +1,4 @@
-# lxd-Quotes
+# lxd-quotes
 
 This is an application that allows the user to create quotes, upvote or downvote a quote and be able to delete a quote.
 
