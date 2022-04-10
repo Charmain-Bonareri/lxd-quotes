@@ -10,18 +10,20 @@
 
           <p class="quote-text">{{quote.quotecontent}}</p>
           <p class="quote-author">{{quote.author}}</p>
-          <p class="quote-submittedby">{{quote.submittedquote}}</p>
+
           <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> like
+            <span class="glyphicon glyphicon-star" aria-hidden="true" (click)="upVote()">{{upvotes}}<i class="fa fa-thumbs-up"></i></span> like
           </button>
           <button type="button" class="btn btn-default ">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> dislike
+            <span class="glyphicon glyphicon-star" aria-hidden="true" (click)="downVote()">{{downvotes}}<i class="fa fa-thumbs-down"></i></span> dislike
           </button>
-          <button type="button" class="btn btn-default ">
+
+            <button type="button" class="btn btn-default ">
             <span>
               delete
             </span>
-          </button>
+           </button>
+          <p class="quote-submittedby"><span>submitted by: </span>{{quote.submittedquote}}</p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
         </div>

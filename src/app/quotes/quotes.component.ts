@@ -16,7 +16,17 @@ export class QuotesComponent implements OnInit {
     new Quote(5,  '"Art has to move you and design does not, unless its’s a good design for a bus."', '- David Hockney','Anastacia'),
     new Quote(6,  '"The life of a designer is a life of a fight, fight against the ugliness and dullness."', '- Massimo Vignelli', 'Lawrencio'),
   ];
+  upvotes = 0;
+  downvotes = 0;
 
+
+  upVote(){
+    this.upvotes = this.upvotes + 1;//adds one on mouse click
+  }
+
+  downVote(){
+    this.downvotes = this.downvotes + 1;//adds one per mouse click
+  }
 
   constructor() { }
 
