@@ -1,20 +1,34 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-8">
       <h2>My Quotes</h2>
+      <div class="row">
+      <div *ngFor="let quote of quotes; let i = index" class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="quote-title">{{quote.quotetitle}}</h5>
+
+          <p class="quote-text">{{quote.quotecontent}}</p>
+          <p class="quote-author">{{quote.author}}</p>
+          <p class="quote-submittedby">{{quote.submittedquote}}</p>
+          <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> like
+          </button>
+          <button type="button" class="btn btn-default ">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span> dislike
+          </button>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+        </div>
+        </div>
+      </div>
+
 
 
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <h2>Create new Quote</h2>
 
     </div>
   </div>
 
-<div>
-  <ul *ngFor = 'let quote of quotes' >
-    <li >  {{quote.quotetitle}}</li>
-    <li>{{quote.quotecontent}}</li>
-    <li>{{quote.author}}</li>
-  </ul>
-  </div>
+
