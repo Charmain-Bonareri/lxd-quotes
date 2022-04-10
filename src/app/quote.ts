@@ -1,21 +1,14 @@
 export class Quote {
 
-  id: number;
-  // quotetitle: string;
-  quotecontent: string;
-  author: string;
-  submittedquote: string;
+  showDescription= true;
 
 
-  constructor(id:number, quotecontent:string,author:string, submittedquote:string){
-    this.id = id
-    // this.quotetitle = quotetitle
-    this.quotecontent = quotecontent
-    this.author = author
-    this.submittedquote = submittedquote
+  constructor(
+    public id: number,
+    public quotecontent: string,
+    public author: string,
+    public submittedquote: string,
+    public completeDate: Date){
   }
 
-  // creationdate : Date;
-  // like: number;
-  // dislike: number;
 }
