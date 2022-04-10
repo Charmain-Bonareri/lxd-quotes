@@ -9,20 +9,11 @@ import {Quote} from '../quote'
 export class QuoteDetailComponent implements OnInit {
 
   @Input() quote: Quote;
-  @Output() isComplete = new EventEmitter<boolean>();
+  @Output() isComplete = new EventEmitter<boolean>();//transmits to the delete trigger from parent component on delete function
 
-    quoteDelete(complete:boolean){
-      this.isComplete.emit(complete);
-    }
-
-    
-
-
-
-
-
-
-
+  quoteDelete(complete: boolean) {
+    this.isComplete.emit(complete);
+   }
 
   constructor() { }
 
