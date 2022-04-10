@@ -15,7 +15,7 @@ This is an application that allows the user to create quotes, upvote or downvote
 ## Description
 Learning and Design is a quote app that is interactive and allows user to create quotes, upvote or downvote a quote and be able to delete a quote. We encourage fun learning and creative design! The application was generated with Angular version 13.3.1.
 
-# Setup and Installation Requirements
+## Setup and Installation Requirements
 To run this program:
 
 ```
