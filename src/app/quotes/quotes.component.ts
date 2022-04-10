@@ -28,6 +28,14 @@ export class QuotesComponent implements OnInit {
     this.downvotes = this.downvotes + 1;//adds one per mouse click
   }
 
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Do you want to delete this Quote? ${this.quotes[index].author}`)//alert
+
+      if (toDelete) { this.quotes.splice(index, 1) }//removes quote
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
