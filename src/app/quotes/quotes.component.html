@@ -11,12 +11,8 @@
           <p class="quote-text">{{quote.quotecontent}}</p>
           <p class="quote-author">{{quote.author}}</p>
 
-          <button type="button" class="btn btn-default">
-            <span class="glyphicon glyphicon-star" aria-hidden="true" (click)="upVote()">{{upvotes}}<i class="fa fa-thumbs-up"></i></span> like
-          </button>
-          <button type="button" class="btn btn-default ">
-            <span class="glyphicon glyphicon-star" aria-hidden="true" (click)="downVote()">{{downvotes}}<i class="fa fa-thumbs-down"></i></span> dislike
-          </button>
+
+         
 
           <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
@@ -26,10 +22,14 @@
         </div>
         </div>
       </div>
-
-
-
     </div>
+
+<div>
+
+
+</div>
+
+
     <div class="col-sm-3">
       <h2 class="header3">Create new Quote</h2>
       <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>

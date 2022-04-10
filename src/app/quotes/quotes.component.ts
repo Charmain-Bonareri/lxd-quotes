@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -7,6 +7,8 @@ import { Quote } from '../quote';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+  @Input()  quote: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
 
   quotes:Quote[]= [
     new Quote(1,'"Play is the highest form of research."', '- Albert Einsten','Salma', new Date(2022,3,14)),
@@ -16,19 +18,9 @@ export class QuotesComponent implements OnInit {
     new Quote(5,  '"Art has to move you and design does not, unless its’s a good design for a bus."', '- David Hockney','Anastacia', new Date(2019,6,9)),
     new Quote(6,  '"The life of a designer is a life of a fight, fight against the ugliness and dullness."', '- Massimo Vignelli', 'Lawrencio', new Date(2021,7,18)),
   ];
-  upvotes = 0;
-  downvotes = 0;
 
-
-  upVote(){
-    this.upvotes = this.upvotes + 1;//adds one on mouse click
-  }
-
-  downVote(){
-    this.downvotes = this.downvotes + 1;//adds one per mouse click
-  }
-
-  deleteQuote(isComplete, index) {
+ 
+  deleteQuote(isComplete: any, index: number) {
     if (isComplete) {
       let toDelete = confirm(`Do you want to delete this Quote? ${this.quotes[index].author}`)//alert
 
