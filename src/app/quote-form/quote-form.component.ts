@@ -17,6 +17,12 @@ export class QuoteFormComponent implements OnInit {
     this.addQuote.emit(this.newQuote);//this triggers addition of the new quote
   }
 
+
+
+  // resetForm(){
+  //   this.myForm.reset;
+  // }
+
   constructor() { }
 
   ngOnInit() {
