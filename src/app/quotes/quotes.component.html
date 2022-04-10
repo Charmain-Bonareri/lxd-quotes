@@ -1,11 +1,12 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-9">
       <h2>My Quotes</h2>
       <div class="row">
+        <!-- <div class="col-md-2"></div> -->
       <div *ngFor="let quote of quotes; let i = index" class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="quote-title">{{quote.quotetitle}}</h5>
+          <!-- <h5 class="quote-title">{{quote.quotetitle}}</h5> -->
 
           <p class="quote-text">{{quote.quotecontent}}</p>
           <p class="quote-author">{{quote.author}}</p>
@@ -30,7 +31,7 @@
 
 
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
       <h2>Create new Quote</h2>
 
     </div>

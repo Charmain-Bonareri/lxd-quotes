@@ -1,15 +1,15 @@
 export class Quote {
 
   id: number;
-  quotetitle: string;
+  // quotetitle: string;
   quotecontent: string;
   author: string;
   submittedquote: string;
 
 
-  constructor(id:number, quotetitle:string, quotecontent:string,author:string, submittedquote:string){
+  constructor(id:number, quotecontent:string,author:string, submittedquote:string){
     this.id = id
-    this.quotetitle = quotetitle
+    // this.quotetitle = quotetitle
     this.quotecontent = quotecontent
     this.author = author
     this.submittedquote = submittedquote
