@@ -18,11 +18,8 @@
             <span class="glyphicon glyphicon-star" aria-hidden="true" (click)="downVote()">{{downvotes}}<i class="fa fa-thumbs-down"></i></span> dislike
           </button>
 
-            <button type="button" class="btn btn-default ">
-            <span>
-              delete
-            </span>
-           </button>
+          <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
+
           <p class="quote-submittedby"><span>submitted by: </span>{{quote.submittedquote}}<span> on {{quote.completeDate|date}}</span></p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
