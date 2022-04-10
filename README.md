@@ -42,7 +42,7 @@ $ User is able to create a new quote and see the new quote displayed.
 * Typescript - is a superset of JavaScript and adds optional static typing to the language.
 * Angular - is a JavaScript framework for building mobile and desktop web applications.
 
-# Licence
+## Licence
 MIT Licence 
 copyright (c) 2022 Charmain Bonareri. All Rights Reserved.
 
