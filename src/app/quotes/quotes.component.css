@@ -31,3 +31,20 @@ padding: 30px;
   margin-top: 10px;
   font-family: 'Indie Flower', cursive;
 }
+.header2{
+  font-family: 'Rock Salt', cursive;
+  font-size: larger;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 5%;
+  margin-bottom: 20px;
+}
+.header3{
+  font-family: 'Rock Salt', cursive;
+  font-size: larger;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 18%;
+  margin-bottom: 20px;
+}
+
