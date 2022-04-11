@@ -10,7 +10,7 @@
           <p class="quote-author">{{quote.author}}</p>
           <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
-          <p class="quote-submittedby"><span>submitted by: </span>{{quote.submittedquote}}<span> on {{quote.completeDate|date}}</span></p>
+          <p class="quote-submittedby"><span>submitted by: </span>{{quote.submittedquote}}<span> , {{quote.completeDate|dateCount}} days ago</span></p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
           </div>

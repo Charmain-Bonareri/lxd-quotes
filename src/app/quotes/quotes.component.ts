@@ -11,7 +11,7 @@ export class QuotesComponent implements OnInit {
   @Output() isComplete = new EventEmitter<boolean>();
 
   quotes:Quote[]= [
-    new Quote(1,'"Play is the highest form of research."', '- Albert Einsten', 'Salma', 120,5, new Date(2022,3,14)),
+    new Quote(1,'"Play is the highest form of research."', '- Albert Einsten', 'Salma', 120,5, new Date(2021,3,14)),
     new Quote(2, '"Tell me and I forget, teach me and I may remember, involve me and I learn."', '- Benjamin Franklin','Kahinga', 200,8, new Date(2020,4,13)),
     new Quote(3,  '"He who laughs most learns best."','- John Cleese',  'Charmain', 302, 0,  new  Date(2022,2,12)),
     new Quote(4,  '"When UX doesn’t consider ALL users, shouldn’t it be known as “SOME User Experience” or… SUX?"', '- Billy Gregory', 'Charmain', 180, 9,  new Date(2021,1,12)),

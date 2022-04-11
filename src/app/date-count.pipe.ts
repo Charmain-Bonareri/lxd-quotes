@@ -5,6 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DateCountPipe implements PipeTransform {
 
+  //will give you the exact date the quote is created
   transform(value: any): number {
     let today:Date = new Date(); //get current date and time
     let todayWithNoTime:any = new Date(today.getFullYear(),today.getMonth(),today.getDate())
@@ -20,5 +21,6 @@ export class DateCountPipe implements PipeTransform {
         return 0;
     }
   }
+
 
 }

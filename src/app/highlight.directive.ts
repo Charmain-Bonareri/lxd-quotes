@@ -8,12 +8,12 @@ export class HighlightDirective {
   constructor(private elem:ElementRef) {}
 
   @HostListener("click") upVotes(){
-    this.highlight("highlight")
+    this.textDeco("white")
   }
   @HostListener("dblclick") onDoubleClicks() {
-    this.highlight("highlight")
+    this.textDeco("None")
   }
-  private highlight(highlight: string){
-    this.elem.nativeElement.style.backgroundColor = 'cyan';
+  private textDeco(action:string){
+    this.elem.nativeElement.style.backgroundcolor="cyan";
   }
 }
