@@ -4,6 +4,11 @@ This is an application that allows the user to create quotes, upvote or downvote
 
 ### By Charmain Bonareri, 09/04/2022
 
+## Live Link
+```
+https://lxd-quotes.netlify.app/
+
+```
 ## Table of contents
 * [Description](#description)
 * [Setup and Installation Requirements](#setup)
