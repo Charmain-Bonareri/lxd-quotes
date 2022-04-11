@@ -1,7 +1,5 @@
 export class Quote {
 
-  showDescription= true;
-
 
   constructor(
     public id: number,

@@ -16,19 +16,19 @@ export class QuoteDetailComponent implements OnInit {
    }
 
 
-  upvotes = 0;
-  downvotes = 0;
+  upvotes = 20;
+  downvotes = 5;
 
 
   upVote(){
-    this.upvotes = this.upvotes + 1;//adds one on mouse click
+    this.upvotes = this.upvotes +1;//adds one on mouse click
   }
 
   downVote(){
-    this.downvotes = this.downvotes + 1;//adds one per mouse click
+    this.downvotes = this.downvotes +1;//adds one per mouse click
   }
 
-  
+
   constructor() { }
 
   ngOnInit(): void {

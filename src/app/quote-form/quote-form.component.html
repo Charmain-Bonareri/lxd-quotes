@@ -1,10 +1,10 @@
 <div class="container-fluid" id="form1">
   <div class="row">
-    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote();quoteForm.resetForm({})' #quoteForm='ngForm'>
 
       <div class="form-group">
         <label for="name">Original Authors Name</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.author" name="author" #name="ngModel" required>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.author" name="author" #name="ngModel" pattern="[a-zA-Z]+" class="form-control" placeholder="- Wangari Mathai" required>
         <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
           <p>Please add original author's name</p>
         </div>
@@ -12,7 +12,7 @@
 
       <div class="form-group">
         <label for="description">Quote</label>
-        <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.quotecontent" name="quotecontent" #description="ngModel" required></textarea>
+        <textarea class="form-control" id="description" rows="5" [(ngModel)]="newQuote.quotecontent" name="quotecontent" #description="ngModel" placeholder="add quote" required></textarea>
         <div [hidden]="description.valid || description.pristine" class="alert alert-warning">
           <p> Quote Required</p>
 
@@ -21,13 +21,14 @@
 
       <div class="form-group">
         <label for="submitter">Submitted By:</label>
-        <textarea class="form-control" id="submitter" rows="1" [(ngModel)]="newQuote.submittedquote" name="submittedquote" #description="ngModel" required></textarea>
+        <textarea class="form-control" id="submitter" rows="1" [(ngModel)]="newQuote.submittedquote" name="submittedquote" #description="ngModel" placeholder="your name" required></textarea>
         <div [hidden]="description.valid || description.pristine" class="alert alert-warning">
           <p> Please add your name</p>
 
         </div>
       </div>
       <button type="Submit" class="btn btn-primary ">Publish Quote</button>
+
 
     </form>
   </div>
