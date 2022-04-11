@@ -27,6 +27,8 @@ export class QuoteDetailComponent implements OnInit {
   downVote(){
     this.downvotes = this.downvotes + 1;//adds one per mouse click
   }
+
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -18,11 +18,6 @@ export class QuoteFormComponent implements OnInit {
   }
 
 
-
-  // resetForm(){
-  //   this.myForm.reset;
-  // }
-
   constructor() { }
 
   ngOnInit() {

@@ -2,39 +2,27 @@
   <div class="row">
     <div class="col-sm-9">
       <h2 class="header2">My Quotes</h2>
-      <div class="row">
-        <!-- <div class="col-md-2"></div> -->
-      <div *ngFor="let quote of quotes; let i = index" class="card" style="width: 18rem;">
+       <div class="row">
+       <div *ngFor="let quote of quotes; let i = index" class="card" style="width: 18rem;">
         <div class="card-body">
-          <!-- <h5 class="quote-title">{{quote.quotetitle}}</h5> -->
 
           <p class="quote-text">{{quote.quotecontent}}</p>
           <p class="quote-author">{{quote.author}}</p>
-
-
-         
-
           <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
           <p class="quote-submittedby"><span>submitted by: </span>{{quote.submittedquote}}<span> on {{quote.completeDate|date}}</span></p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
-        </div>
+          </div>
         </div>
       </div>
     </div>
-
-<div>
-
-
+  <div>
 </div>
-
 
     <div class="col-sm-3">
       <h2 class="header3">Create new Quote</h2>
       <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
-      <!--collects user input and triggers an addition of content from addNewQuote event -->
-
     </div>
   </div>
 
